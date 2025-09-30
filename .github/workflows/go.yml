@@ -15,7 +15,7 @@ jobs:
 
     services:
       zookeeper:
-        image: bitnami/zookeeper
+        image: wurstmeister/zookeeper
         ports:
           - 2181:2181
         env:
@@ -27,7 +27,7 @@ jobs:
           --health-retries 5
 
       kafka:
-        image: bitnami/kafka
+        image: wurstmeister/kafka
         ports:
           - 9092:9092
         env:
